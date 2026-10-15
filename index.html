@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simuladores CSS · UPN</title>
+<meta name="description" content="Página principal con acceso a los simuladores educativos de CSS.">
+<style>
+  :root{
+    --navy:#0f1e3d;--navy2:#1a2f5a;--gold:#f2b705;--teal:#1f8a8a;--accent:#667eea;
+    --bg:#f4f6fa;--card:#fff;--line:#e2e6ef;--ink:#1c2333;--muted:#566175;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);min-height:100vh;display:flex;flex-direction:column}
+  header{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:48px 16px;text-align:center}
+  header h1{font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:8px}
+  header p{opacity:.85}
+  main{flex:1;width:100%;max-width:960px;margin:0 auto;padding:40px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:12px;box-shadow:0 10px 30px rgba(15,30,61,.08);transition:transform .2s,box-shadow .2s;border-top:6px solid var(--c)}
+  .card:hover,.card:focus-visible{transform:translateY(-4px);box-shadow:0 16px 40px rgba(15,30,61,.15);outline:none}
+  .icon{font-size:2.4rem}
+  .card h2{font-size:1.3rem}
+  .card p{color:var(--muted);line-height:1.5;flex:1}
+  .btn{align-self:flex-start;background:var(--c);color:#fff;padding:10px 18px;border-radius:10px;font-weight:600}
+  footer{text-align:center;padding:20px 16px;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Simuladores de CSS</h1>
+    <p>Programación Web · Semana 02 · UPN</p>
+  </header>
+
+  <main>
+    <a class="card" href="simulador-css-la-espiga.html" style="--c:var(--teal)">
+      <span class="icon" aria-hidden="true">🥖</span>
+      <h2>Simulador CSS · La Espiga</h2>
+      <p>Aplica CSS, Flexbox, Grid, media queries y accesibilidad a la página de la Panadería La Espiga.</p>
+      <span class="btn">Abrir simulador →</span>
+    </a>
+
+    <a class="card" href="Qwen_html_20261015_5lspw1cji.html" style="--c:var(--accent)">
+      <span class="icon" aria-hidden="true">🎨</span>
+      <h2>CSS Master Pro</h2>
+      <p>Simulador educativo para practicar y dominar las propiedades de CSS paso a paso.</p>
+      <span class="btn">Abrir simulador →</span>
+    </a>
+  </main>
+
+  <footer>© 2026 · Programación Web · UPN</footer>
+</body>
+</html>
